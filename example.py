@@ -1,0 +1,46 @@
+"""
+Demo script: run the validator against a small sample of patient records.
+
+Usage:
+    python example.py
+"""
+
+from validator import validate
+
+medical_records = [
+    {
+        'patient_id': 'P1001',
+        'age': 34,
+        'gender': 'Female',
+        'diagnosis': 'Hypertension',
+        'medications': ['Lisinopril'],
+        'last_visit_id': 'V2301',
+    },
+    {
+        'patient_id': 'p1002',
+        'age': 47,
+        'gender': 'male',
+        'diagnosis': 'Type 2 Diabetes',
+        'medications': ['Metformin', 'Insulin'],
+        'last_visit_id': 'v2302',
+    },
+    {
+        'patient_id': 'P1003',
+        'age': 29,
+        'gender': 'female',
+        'diagnosis': 'Asthma',
+        'medications': ['Albuterol'],
+        'last_visit_id': 'v2303',
+    },
+    {
+        'patient_id': 'p1004',
+        'age': 56,
+        'gender': 'Male',
+        'diagnosis': 'Chronic Back Pain',
+        'medications': ['Ibuprofen', 'Physical Therapy'],
+        'last_visit_id': 'V2304',
+    },
+]
+
+if __name__ == '__main__':
+    validate(medical_records)

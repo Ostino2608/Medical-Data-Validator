@@ -1,0 +1,5 @@
+# No runtime dependencies — the validator only uses Python's standard library.
+# This file is kept for convenience and future dependencies.
+
+# Dev/test dependency:
+pytest>=7.0
